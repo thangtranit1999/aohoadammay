@@ -5,7 +5,7 @@ var mongodb = require('mongodb');
 var MongoClient = mongodb.MongoClient;
 
 // Connection URL. This is where your mongodb server is running.
-var url = 'mongodb://10.110.13.197:27017/test';//
+var url = 'mongodb://10.110.13.197/test';//:27017
 
 // Use connect method to connect to the Server
 MongoClient.connect(url, function (err, db) {
