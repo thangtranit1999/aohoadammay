@@ -1,7 +1,7 @@
 var mongodb = require('mongodb');
 
 //We need to work with "MongoClient" interface in order to connect to a mongodb server.
-var MongoClient = mongodb.MongoClient;
+var MongoClient = mongodb.MongoClient({useUnifiedTopology:true});
 console.log("co chay");
 // Connection URL. This is where your mongodb server is running.
 var url = 'mongodb://10.110.10.106/my_database_name';
