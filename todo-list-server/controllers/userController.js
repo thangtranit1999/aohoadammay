@@ -13,11 +13,5 @@ const login = async (req, res) => {
   
 };
 
-const post = (req, res) => {
-  const user = req.body;
-  userModel.create(user, (err, result) => {
-    err ? res.send(err) : res.send(result);
-  });
-};
 
-module.exports = { login, post };
+module.exports = { login };
